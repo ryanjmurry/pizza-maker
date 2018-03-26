@@ -9,7 +9,7 @@ function Pizza(size, crust, sauce, cheese, meat, nonMeat) {
   this.nonMeat = nonMeat;
 }
 
-Pizza.prototype.Order = function() {
+Pizza.prototype.Price = function() {
   debugger;
   var pizzaSize = this.size;
   var pizzaCrust = this.crust;
@@ -28,6 +28,8 @@ Pizza.prototype.Order = function() {
     return 14+(pizzaCheese*3)+(pizzaMeat*2)+(pizzaNonMeat*1.50)
   } else if (pizzaSize === "Jumbo") {
     return 16+(pizzaCheese*3)+(pizzaMeat*2)+(pizzaNonMeat*1.50)
+  } else {
+    alert("Please select a pizza size");
   }
 };
 //UI logic
@@ -51,6 +53,14 @@ $(document).ready(function() {
       userNonMeat.push($(this).val());
     });
     var userPizza = new Pizza (userSize, userCrust, userSauce, userCheese, userMeat, userNonMeat);
-    var order = userPizza.Order().toFixed(2);
+    var price = userPizza.Price().toFixed(2);
+    $("#order-summary").show();
+    $("#user-size").text(userPizza.size);
+    $("#user-crust").text(userPizza.crust);
+    $("#user-sauce").text(userPizza.sauce);
+    $("#user-cheese").text(userPizza.cheese);
+    $("#user-meat").text(userPizza.meat);
+    $("#user-non-meat").text(userPizza.nonMeat);
+    $("#user-balance").text(price);
   });
 });
