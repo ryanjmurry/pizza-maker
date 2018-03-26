@@ -1,0 +1,44 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: darkgrey;
+}
+
+.jumbotron {
+  background-color: transparent;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 100px;
+  font-weight: bolder;
+  color: blue;
+  text-shadow: 1px 1px 0 white,
+    -1px 1px 0 white,
+    1px -1px 0 white,
+    -1px -1px 0 white,
+    0px 1px 0 white,
+    0px -1px 0 white,
+    -1px 0px 0 white,
+    1px 0px 0 white,
+    2px 2px 0 white,
+    -2px 2px 0 white,
+    2px -2px 0 white,
+    -2px -2px 0 white,
+    0px 2px 0 white,
+    0px -2px 0 white,
+    -2px 0px 0 white,
+    2px 0px 0 white,
+    1px 2px 0 white,
+    -1px 2px 0 white,
+    1px -2px 0 white,
+    -1px -2px 0 white,
+    2px 1px 0 white,
+    -2px 1px 0 white,
+    2px -1px 0 white,
+    -2px -1px 0 white;
+}
+
+.jumbotron h2 {
+  font-style: italic;
+  color: red;
+}
