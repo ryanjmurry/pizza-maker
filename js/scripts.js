@@ -54,7 +54,7 @@ $(document).ready(function() {
     });
     var userPizza = new Pizza (userSize, userCrust, userSauce, userCheese, userMeat, userNonMeat);
     var price = userPizza.Price().toFixed(2);
-    $("#order-summary").show();ad
+    $("#order-summary").show();
     $("#pizza-order").hide();
     $("#user-size").text(userPizza.size);
     $("#user-crust").text(userPizza.crust);
