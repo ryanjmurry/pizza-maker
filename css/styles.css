@@ -5,11 +5,11 @@ body {
 
 .jumbotron {
   background-color: transparent;
-  text-align: center;
 }
 
 .jumbotron h1 {
   font-size: 100px;
+  text-align: center;
   font-weight: bolder;
   color: blue;
   text-shadow: 1px 1px 0 white,
@@ -38,19 +38,18 @@ body {
     -2px -1px 0 white;
 }
 
-.jumbotron h2 {
-  color: red;
-}
-
 .jumbotron h3 {
-  font-style: italic;
+  font-style: bold;
   color: white;
+  text-align: center;
 }
 
 .option-text {
   color: blue;
   font-size: 30px;
 }
+
+.jumbotron
 
 label {
   color: black;

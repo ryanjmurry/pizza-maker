@@ -13,81 +13,91 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Murry's Pizza Parlor</h1>
-        <h2>Online Ordering System</h2>
         <h3>[Personal.....$8.00] [Small.....$10.00] [Medium.....$12.00] [Large.....$14.00] [Jumbo.....$16.00]</h3><br>
         <h3>Cheese.....$3.00 each</h3><br>
         <h3>Meat Toppings.....$2.00 each</h3><br>
         <h3>Non-Meat Toppings.....$1.50 each</h3><br>
       </div>
-      <div class="row">
-        <div class="col">
-          <form id="pizza-order">
-            <div class="form-group">
-              <p class="option-text">Pizza Size</p>
-              <select id="pizza-size">
-                <option value=""></option>
+        <form id="pizza-order">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <p class="option-text">Pizza Size</p>
+                <select id="pizza-size">
+                  <option value=""></option>
                   <option value="Personal">Personal (4 slices)</option>
                   <option value="Small">Small (6 slices)</option>
                   <option value="Medium">Medium (8 slices)</option>
                   <option value="Large">Large (12 slices)</option>
                   <option value="Jumbo">Jumbo (16 slices)</option>
-              </select>
+                </select>
+              </div>
             </div>
-            <div class="form-group">
-              <p class="option-text">Crust Style</p>
-              <select id="pizza-crust">
-                <option value="Regular">Regular</option>
-                <option value="Thin">Thin</option>
-                <option value="Deep Dish">Deep Dish</option>
-                <option value="Gluten Free">Gluten Free</option>
-              </select>
+            <div class="col-md-4">
+              <div class="form-group">
+                <p class="option-text">Crust Style</p>
+                <select id="pizza-crust">
+                  <option value="Regular">Regular</option>
+                  <option value="Thin">Thin</option>
+                  <option value="Deep Dish">Deep Dish</option>
+                  <option value="Gluten Free">Gluten Free</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group">
-              <p class="option-text">Pizza Sauce</p>
-              <select id="pizza-sauce">
-                <option value="Hearty Marinara Sauce">Hearty Marinara Sauce</option>
-                <option value="Garlic Parmesan White Sauce">Garlic Parmesan White Sauce</option>
-                <option value="BBQ Sauce">BBQ Sauce</option>
-                <option value="None">None</option>
-              </select>
+            <div class="col-md-4">
+              <div class="form-group">
+                <p class="option-text">Pizza Sauce</p>
+                <select id="pizza-sauce">
+                  <option value="Hearty Marinara Sauce">Hearty Marinara Sauce</option>
+                  <option value="Garlic Parmesan White Sauce">Garlic Parmesan White Sauce</option>
+                  <option value="BBQ Sauce">BBQ Sauce</option>
+                  <option value="None">None</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group">
-              <p class="option-text">Pizza Cheese</p>
-              <input type="checkbox" name="pizza-cheese" value=" American"/><label for="checkbox"> American Cheese</label><br>
-              <input type="checkbox" name="pizza-cheese" value=" Cheddar"/><label for="checkbox"> Cheddar Cheese</label><br>
-              <input type="checkbox" name="pizza-cheese" value=" Feta"/><label for="checkbox"> Feta Cheese</label><br>
-              <input type="checkbox" name="pizza-cheese" value=" Shredded Parmesan"/><label for="checkbox"> Shredded Parmesan Cheese</label><br>
-              <input type="checkbox" name="pizza-cheese" value=" Shredded Provolone"/><label for="checkbox"> Shredded Provolone Cheese</label><br>
-              <input type="checkbox" name="pizza-cheese" value=" Sliced Provolone"/><label for="checkbox"> Sliced Provolone Cheese</label><br>
+            <div class="col-md-4">
+              <div class="form-group">
+                <p class="option-text">Pizza Cheese</p>
+                <input type="checkbox" name="pizza-cheese" value=" American"/><label for="checkbox"> American Cheese</label><br>
+                <input type="checkbox" name="pizza-cheese" value=" Cheddar"/><label for="checkbox"> Cheddar Cheese</label><br>
+                <input type="checkbox" name="pizza-cheese" value=" Feta"/><label for="checkbox"> Feta Cheese</label><br>
+                <input type="checkbox" name="pizza-cheese" value=" Shredded Parmesan"/><label for="checkbox"> Shredded Parmesan Cheese</label><br>
+                <input type="checkbox" name="pizza-cheese" value=" Shredded Provolone"/><label for="checkbox"> Shredded Provolone Cheese</label><br>
+                <input type="checkbox" name="pizza-cheese" value=" Sliced Provolone"/><label for="checkbox"> Sliced Provolone Cheese</label><br>
+              </div>
             </div>
-            <div class="form-group">
-              <p class="option-text">Meat Toppings</p>
-              <input type="checkbox" name="meat-toppings" value=" Bacon"/><label for="checkbox"> Bacon</label><br>
-              <input type="checkbox" name="meat-toppings" value=" Beef"/><label for="checkbox"> Beef</label><br>
-              <input type="checkbox" name="meat-toppings" value=" Chicken"/><label for="checkbox"> Chicken</label><br>
-              <input type="checkbox" name="meat-toppings" value=" Ham"/><label for="checkbox"> Ham</label><br>
-              <input type="checkbox" name="meat-toppings" value=" Italian Sausage"/><label for="checkbox"> Italian Sausage</label><br>
-              <input type="checkbox" name="meat-toppings" value=" Pepperoni"/><label for="checkbox"> Pepperoni</label><br>
-              <input type="checkbox" name="meat-toppings" value=" Philly Steak"/><label for="checkbox"> Philly Steak</label><br>
-              <input type="checkbox" name="meat-toppings" value=" Salami"/><label for="checkbox"> Salami</label><br>
+            <div class="col-md-4">
+              <div class="form-group">
+                <p class="option-text">Meat Toppings</p>
+                <input type="checkbox" name="meat-toppings" value=" Bacon"/><label for="checkbox"> Bacon</label><br>
+                <input type="checkbox" name="meat-toppings" value=" Beef"/><label for="checkbox"> Beef</label><br>
+                <input type="checkbox" name="meat-toppings" value=" Chicken"/><label for="checkbox"> Chicken</label><br>
+                <input type="checkbox" name="meat-toppings" value=" Ham"/><label for="checkbox"> Ham</label><br>
+                <input type="checkbox" name="meat-toppings" value=" Italian Sausage"/><label for="checkbox"> Italian Sausage</label><br>
+                <input type="checkbox" name="meat-toppings" value=" Pepperoni"/><label for="checkbox"> Pepperoni</label><br>
+                <input type="checkbox" name="meat-toppings" value=" Philly Steak"/><label for="checkbox"> Philly Steak</label><br>
+                <input type="checkbox" name="meat-toppings" value=" Salami"/><label for="checkbox"> Salami</label><br>
+              </div>
             </div>
-            <div class="form-group">
-              <p class="option-text">Non-Meat Toppings</p>
-              <input type="checkbox" name="non-meat-toppings" value=" Banana Peppers"/><label for="checkbox"> Banana Peppers</label><br>
-              <input type="checkbox" name="non-meat-toppings" value=" Black Olives"/><label for="checkbox"> Black Olives</label><br>
-              <input type="checkbox" name="non-meat-toppings" value=" Diced Tomatoes"/><label for="checkbox"> Diced Tomatoes</label><br>
-              <input type="checkbox" name="non-meat-toppings" value=" Green Peppers"/><label for="checkbox"> Green Peppers</label><br>
-              <input type="checkbox" name="non-meat-toppings" value=" Jalapeno Peppers"/><label for="checkbox"> Jalapeno Peppers</label><br>
-              <input type="checkbox" name="non-meat-toppings" value=" Mushrooms"/><label for="checkbox"> Mushrooms</label><br>
-              <input type="checkbox" name="non-meat-toppings" value=" Onions"/><label for="checkbox"> Onions</label><br>
-              <input type="checkbox" name="non-meat-toppings" value=" Pineapple"/><label for="checkbox"> Pineapple</label><br>
-              <input type="checkbox" name="non-meat-toppings" value=" Roasted Red Peppers"/><label for="checkbox"> Roasted Red Peppers</label><br>
-              <input type="checkbox" name="non-meat-toppings" value=" Spinach"/><label for="checkbox"> Spinach</label><br>
+            <div class="col-md-4">
+              <div class="form-group">
+                <p class="option-text">Non-Meat Toppings</p>
+                <input type="checkbox" name="non-meat-toppings" value=" Banana Peppers"/><label for="checkbox"> Banana Peppers</label><br>
+                <input type="checkbox" name="non-meat-toppings" value=" Black Olives"/><label for="checkbox"> Black Olives</label><br>
+                <input type="checkbox" name="non-meat-toppings" value=" Diced Tomatoes"/><label for="checkbox"> Diced Tomatoes</label><br>
+                <input type="checkbox" name="non-meat-toppings" value=" Green Peppers"/><label for="checkbox"> Green Peppers</label><br>
+                <input type="checkbox" name="non-meat-toppings" value=" Jalapeno Peppers"/><label for="checkbox"> Jalapeno Peppers</label><br>
+                <input type="checkbox" name="non-meat-toppings" value=" Mushrooms"/><label for="checkbox"> Mushrooms</label><br>
+                <input type="checkbox" name="non-meat-toppings" value=" Onions"/><label for="checkbox"> Onions</label><br>
+                <input type="checkbox" name="non-meat-toppings" value=" Pineapple"/><label for="checkbox"> Pineapple</label><br>
+                <input type="checkbox" name="non-meat-toppings" value=" Roasted Red Peppers"/><label for="checkbox"> Roasted Red Peppers</label><br>
+                <input type="checkbox" name="non-meat-toppings" value=" Spinach"/><label for="checkbox"> Spinach</label><br>
+              </div>
             </div>
-            <button type="submit" class="btn btn-danger" id="pizza-submit">Submit</button>
-          </form>
-        </div>
-        <div id="order-summary" class="col">
+          </div>
+          <button type="submit" class="btn btn-success" id="pizza-submit">Submit</button>
+        </form>
+        <div id="order-summary">
           <h1>Order Summary:</h1>
           <h2>Size: <span id="user-size"></span></h2>
           <h2>Crust: <span id="user-crust"></span></h2>
@@ -98,7 +108,6 @@
           <br>
           <h2>Total: <span>$</span><span id="user-balance"></span></h2>
         </div>
-      </div>
     </div>
   </body>
 </html>
